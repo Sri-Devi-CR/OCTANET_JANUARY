@@ -1,0 +1,278 @@
+<!--
+    OCTANET JANUARY TASK 1
+    Creating a landing webpage
+    I've decided to create a landing page for an event
+    This event registration is for the MonBang concert 
+    organised by Starship entertainment 
+    for the group Monsta X 
+    and is scheduled on 17th February 2024 from 6:30 PM - 8:30 PM IST. 
+    The venue of the concert is Algorythm, Prestige Shanthinikethan Tower C, Bangalore    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sri Devi C R and OctaNet Services">
+    <meta name="theme-color" content="#712cf9">
+    
+    <title>MonBang Registration!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        style.css - main style sheet
+        utils.css - reusable style sheet for different class where margin, alignment, etc are common 
+    -->
+    <link rel="stylesheet" href="utils.css">
+</head>
+<body class="bg-img1">
+    <div class="container mx-auto"> <!-- bg-cyan"> -->
+        <!--
+            Header contains the nav bar
+            Main contains main content of the page
+            Footer contains the contact details
+        -->
+        <header>
+            <nav class="flex justify-between">
+                <div class="font-b-i flex items-center">MONBANG CONCERT TICKETS</div>
+                <ul class="navbar flex items-center">
+                    <li><a class="hlinks" href="#">Home</a></li>
+                    <li><a class="hlinks" href="#">MonBang</a></li>
+                    <li><a class="hlinks" href="#">Our Team</a></li>
+                    <li><a class="hlinks" href="#">Contact Us</a></li>
+                    <li><button class="btn hlinks">Login</button></li>
+                    <li><button class="btn hlinks">Sign Up</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main class="min-h-screen">
+            <section class="section1"><!--Home-->
+                <div class="flex">
+                    <div class="topleft flex justify-center flex-col px-2">
+                        <h1 class="my-1 head">It's Official!<br>
+                        The wait is finally over!</h1>
+                        <p><b>
+                            <i><b>Monsta X</b></i>, a Kpop group under Starship Entertainment will be performing their first Indian concert in Bangalore! <br>
+                            Monsta X named the upcoming Bangalore concert as <i>MonBang</i>! <br> <br>
+
+                            The concert will be followed by a personal meet-and-greet by all the members!
+                            You'd better buy the tickets soon, because the meet-and-greet is sure to sell out quickly ><.
+
+                            <br>
+                        </b></p>
+                    </div>
+                    
+                    <div class="topright bg-img2"></div>
+                </div>
+            </section>
+            <br><br><br>
+
+
+            <section  class="section1"><!--MonBang-->
+            <!--<div class="flex">-->
+
+                
+                    <div class="flex justify-center flex-col px-2 form">
+                            
+                        <table class="tabr">
+                            <tr><th><h1 class="my-1 head"><u>MonBang Tickets!</u></h1></th></tr>
+                            <tr>
+                            <th>MonBang is scheduled on <b>17th of February 2024</b>
+                            from <b>6:30 PM - 8:30 PM IST.</b> <br>
+                            The venue of the concert is <b>Algorythm, Prestige Shanthinikethan Tower C, Bangalore</b>
+                            <br><br>
+                            Book your tickets now!<br> </th>
+                            </tr>  
+                            
+                        </table>
+                    </div>
+                    <br><br><br>
+                    <div class="flex justify-center flex-col px-2">
+                        <h1 class="my-1 head"><u>Book your Tickets!</u></h1>
+                        <table class="tabl">
+                            <tr><th class="tr" colspan="2"><h1>Enter your details</h1></th></tr>
+                            <form>
+                                <tr>
+                                    <th class="tr"><label>First Name</label></th>
+                                    <th class="tr"><input type="text" class="txtfield" name="fname"></th>
+                                </tr>
+                                <tr>
+                                    <th class="tr"><label>Last Name</label></th>
+                                    <th class="tr"><input type="text" class="txtfield" name="lname"></th>
+                                </tr>
+                                <tr>
+                                    <th class="tr"><label>Email</label></th>
+                                    <th class="tr"><input type="email" class="txtfield" name="fname"></th>
+                                </tr>
+                                <tr>
+                                    <th class="tr"><label>Phone Number</label></th>
+                                    <th class="tr"><input type="number" class="txtfield" name="fname"></th>
+                                </tr>
+
+                                <tr>
+                                    <th class="tr"><label>Seating Options</label></th>
+                                    <th class="tr">
+                                        <li style="list-style: none">
+                                        <input type="radio" class="radio" name="fname">Front Stage
+                                        </li>
+                                        <li style="list-style: none">
+                                        <input type="radio" class="radio" name="fname">Middle
+                                        </li>
+                                        <li style="list-style: none">
+                                        <input type="radio" class="radio" name="fname">Balcony
+                                        </li>
+                                    </th>
+
+                                </tr>
+                                <tr>
+                                    <th class="tr"><label>No. of Tickets</label></th>
+                                    <th class="tr"><input type="number" class="txtfield" name="fname"></th>
+                                </tr>
+
+
+                            </form>
+                            
+                        </table>
+                        <button class="btn2">Submit</button>
+                    </div>
+                    
+                <!--</div>-->
+            </section>
+            <br><br><br>
+            
+
+            <section class="section1">
+                <div class="align-left">
+                    <h1 class="my-1 section1 head"><u>Organisers</u></h1>
+                    <p><b>Our skilled and experienced concert managers</b></p>
+                </div>
+                <div class="container-block outer-container"> 
+                    <div class="container-block">
+                        <div class="cell-block team-container">
+                            <div class="flex-col flex justify-between">
+                                <div class="img-wrapper">
+                                    <img src="pic2.jpg" alt="Manager1" width="150" height="180"><br>
+                                    <label class="lab">Kim Young</label><br>
+                                    <label class="lab">Group Manager</label>
+                                    <div class="social-media-links">
+                                        <a href="http://www.twitter.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                                        </a>
+                                        <a href="http://www.facebook.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+                                        </a>
+                                        <a href="http://www.instagram.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                                        </a>
+                                        <a href="http://www.gmail.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+                                        </a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-block">
+                        <div class="cell-block team-container">
+                            <div class="flex-col flex justify-between">
+                                <div class="img-wrapper">
+                                    <img src="pic1.jpg" alt="Manager1" width="150" height="200"><br>
+                                    <label class="lab">Ashwin Choudary</label><br>
+                                    <label class="lab">Event Manager</label>
+                                    <div class="social-media-links">
+                                        <a href="http://www.twitter.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                                        </a>
+                                        <a href="http://www.facebook.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+                                        </a>
+                                        <a href="http://www.instagram.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                                        </a>
+                                        <a href="http://www.gmail.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+                                        </a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-block">
+                        <div class="cell-block team-container">
+                            <div class="flex-col flex justify-between">
+                                <div class="img-wrapper">
+                                    <img src="pic3.jpg" alt="Manager1" width="150" height="200"><br>
+                                    <label class="lab">Niharika</label><br>
+                                    <label class="lab">Venue Manager</label>
+                                    <div class="social-media-links">
+                                        <a href="http://www.twitter.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                                        </a>
+                                        <a href="http://www.facebook.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+                                        </a>
+                                        <a href="http://www.instagram.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                                        </a>
+                                        <a href="http://www.gmail.com/" target="_blank">
+                                          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+                                        </a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section><!--Our team-->
+            <hr>
+        </main>
+
+
+        <footer class="footer">
+            <div class="font-b-i2 flex">"We will be waiting for our Indian fans!" <br> - Monsta X</div>
+            <ul class="align-right flex no-li justify-between">
+                <li class="no-li">
+                    <a class="no-li" href="#">Home</a>
+                </li>
+                <li class="no-li">
+                    <a class="no-li" href="#">Contact Us</a>
+                </li>
+                
+                <li class="no-li">
+                    <a class="no-li" href="#">About us</a>
+                </li>
+                
+                <li class="no-li">
+                    <a class="no-li" href="#">Support</a>
+                </li>
+                <ul class="no-li">
+                    <li>
+                        <div class="social-media-links">
+                            <a href="http://www.twitter.com/" target="_blank">
+                              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                            </a>
+                            <a href="http://www.facebook.com/" target="_blank">
+                                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+                              </a>
+                              <a href="http://www.instagram.com/" target="_blank">
+                                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                              </a>
+                              <a href="http://www.gmail.com/" target="_blank">
+                                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+                              </a>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+            
+        </footer><!--Contact Us-->
+    </div>
+</body>
+</html>

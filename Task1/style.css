@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:ital,wght@0,300;1,200&display=swap');
+/*
+font-family: 'Lora', serif;
+font-family: 'Mulish', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display');
+
+*{ /* all classes will have 0 margin and padding*/
+    margin:0;
+    padding:0;
+}
+
+.container{ /*aligns contents of the container class into a region*/
+    max-width: 85vw;
+    font-family: 'Lora', serif;
+}
+
+.navbar{ 
+    display: flex;/* flattens line by line list to single line */
+    height: 70px;
+}
+
+.navbar li{ 
+    list-style: none;/* removes list numbers or shapes*/
+    margin: 0 12px;/* gives space b/w each list elem in the line*/
+}
+
+.no-li{
+    list-style: none;/* removes list numbers or shapes*/
+    margin: 2px 2px 2px 2px;
+    padding: 2em 2em 2em 2em;
+    color: white;
+}
+
+.topleft{
+    width: 50%;
+    padding: 12px 0;
+}
+
+.topright{
+    width: 50%;
+    height: 50vh;
+}
+
+.topleft-sec2{
+    width: 50%;
+    padding: 12px 0;
+}
+
+.topright-sec2{
+    width: 50%;
+    height: 50vh;
+}
+
+.section1{
+    font-family: 'Mulish', sans-serif;
+}
+
+.align-left{
+    text-align: center;
+}
+
+.left-sec3{
+    width: 33%;
+    padding: 12px 0;
+    height: 50vh;
+}
+
+.mid-sec3{
+    width: 33%;
+    padding: 12px 0;
+    height: 50vh;
+}
+
+.right-sec3{
+    width: 50%;
+    height: 50vh;
+}
+
+
+.footer{
+    background-color: black;
+    color: aliceblue;
+}
+
+.hlinks{
+    color: black;
+}
+
+.tabl{
+    border: 2px solid black;
+    background-color:rgb(157, 95, 101);
+    border-radius: 6px;
+    border-color: black;
+    padding: 8px;
+}
+
+tr{
+    height: 40px;
+}
+
+.tr{
+    border-bottom: 1px solid rgb(186 174 134);
+    height: 20px;
+    text-align: left;
+}
+
+.tabr{
+    border: 2px solid black;
+    background-color: rgb(186 174 134);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.txtfield{
+    height: 30px;
+    width: 200px;
+}
+
+.lab{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
