@@ -1,0 +1,56 @@
+<!--
+    OCTANET Task 2
+    Create a to-do list that creates and categorize tasks
+    related to your website projects.
+    Assign deadlines, priorities, and labels to each task
+    for better organization and clarity.
+
+    Prioritize tasks based on urgency, importance, 
+    or project dependencies. 
+    This feature ensures that you focus on 
+    high-priority items and maintain a productive workflow.
+
+    Monitor the progress of your tasks in real-time. 
+    Visualize your achievements and identify bottlenecks 
+    to make necessary adjustments and stay on track towards 
+    meeting your website goals.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sri Devi C R and OctaNet Services">
+    <meta name="theme-color" content="#712cf9">
+    
+    <title>Nevget To Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+
+<body class="body-style scroll">
+    <div class="container">
+        <h1 class="headings2">Increase your productivity by using <i>Nev(er For)get To Do List!</i></h1><hr>
+        <!--<h2 class="headings2">Website by Sri Devi C R</h2>-->
+        <h1 class="headings">To Do List</h1>
+
+        <form id="add-task-form">
+            
+            <input  id="task-input" type="text" class="inputs not-headings" placeholder="Enter the task" required><br>
+            <select id="prior" class="inputs not-headings" value="Priority" required>
+                <option class="inputs not-headings" value="High">High</option>
+                <option class="inputs not-headings" value="Medium">Medium</option>
+                <option class="inputs not-headings" value="Low">Low</option>
+            </select>
+            <input id="deadline" type="date" class="inputs not-headings" required>
+            <input type="button" class="style-button not-headings" value="Add the task" onclick="addTask()">
+        </form><hr>
+        <div id="tasks-list" class="upcoming-li"></div>
+    </div>
+       
+</body>
+</html>

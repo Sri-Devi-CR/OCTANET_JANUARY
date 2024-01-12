@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+.headings{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 40px;
+}
+
+
+.headings2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 5px 5px 5px black;
+    color: #f48836;
+    margin-bottom: 40px;
+}
+
+.not-headings{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.not-headings2{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.body-style{
+    background-image: url("todo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(207, 252, 252);
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    background-color: rgb(14, 14, 14);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(252, 230, 103, 0.3);
+    /*box-sizing: border-box;*/
+    width: 680px;
+    opacity: 0.95;
+    
+}
+
+.scroll{
+    overflow-y: scroll;
+}
+
+.final{
+    background-color: #000000;
+    position: relative;
+    top: 315px;
+    bottom: 0; 
+    left: 200px; 
+    right: 200px;
+    z-index: 10;
+    display:block;
+}
+
+.inputs, .style-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.style-button{
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(87, 75, 61);
+    box-shadow: 4px 4px 4px rgba(103, 252, 249, 0.3);
+}
+
+.upcoming-li{
+    margin-top: 20px;
+}
+
+.added-task{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 13px;
+    opacity: 0.6;
+    background-color: rgb(216, 162, 254);
+    color: #333;
+    transition: background-color 200ms ease-in-out;
+}
+
+.added-task:hover{
+    background-color: rgb(255, 164, 66);
+}
+
+.added-task .completed{
+    background-color: rgba(113, 235, 109, 0.516);
+}
+
+.added-task .task-title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;    
+    flex-grow: 1;
+    color: #000000;
+}
+
+.added-task .completed.task-title{
+    text-decoration: line-through;
+}
+
+.added-task .task-title.completed{
+    text-decoration: line-through;
+}
+
+.added-task .prior{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.added-task .prior-high{
+    background-color: red;
+}
+
+.added-task .prior-medium{
+    color: aliceblue;
+    background-color: darkblue;
+}
+
+.added-task .prior-low{
+    background-color: yellow;
+}
+
+.added-task .dead{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.added-task .lab{
+    background-color: rgb(251, 175, 175);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 2px 4px;
+}
+
+.added-task.actions{
+    margin-left: auto;
+}
+
+.added-task .actions button{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #00d9ff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.added-task .actions button:hover{
+    background-color: #197;
+}
+
+.added-task .actions button:last-child{
+    background-color: #f44336;
+}
+
+.added-task .actions button:last-child:hover{
+    background-color: #d32f2f;
+}
+
+.added-task-li-item{
+    display: flex;
+    align-items: center;
+}
+
+.added-task-li-item:before{
+    content: counter(task-counter) ".";
+    font-weight: bolder;
+    margin-right: 5px;
+    font-size:14px;
+}
+
+
+/*
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.salsa-regular {
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+*/
